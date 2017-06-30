@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install unzip && \
     apt-get clean
 
-RUN curl -L -O https://github.com/Studio-42/elFinder/archive/2.1.24.zip && \
+RUN curl -L -O https://github.com/Studio-42/elFinder/archive/2.1.25.zip && \
     unzip *.zip && \
     rm -f *.zip
 
