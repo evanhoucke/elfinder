@@ -1,0 +1,14 @@
+# Docker Container for elFinder
+
+Contains https://github.com/Studio-42/elFinder
+
+## Usage
+Container listens on port 80 for connections and serves the
+'/data' directory
+
+    sudo docker run -it --rm -p 8080:80 -v `pwd`:/data evanhoucke/elfinder
+
+Default configuration can be overridden by replacing the file `/config/connector.php`
+
+    sudo docker run -it --rm -p 8080:80 -v `pwd`:/data -v connector.php:/config/connector.php evanhoucke/elfinder
+
